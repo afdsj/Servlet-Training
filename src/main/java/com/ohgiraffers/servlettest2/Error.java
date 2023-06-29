@@ -10,7 +10,7 @@ import java.io.IOException;
 @WebServlet("/404error")
 public class Error extends HttpServlet {
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.sendError(404, "잘못된 주문입니다");
     }
 }
