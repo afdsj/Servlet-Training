@@ -37,7 +37,7 @@ public class Tteokbokki extends HttpServlet {
             req.setAttribute("spicy", spicy);
             req.setAttribute("topping", topping);
 
-            RequestDispatcher rd = req.getRequestDispatcher("print");
+            RequestDispatcher rd = req.getRequestDispatcher("delivery");
             rd.forward(req, resp);
         }
     }
